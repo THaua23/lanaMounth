@@ -1,0 +1,358 @@
+*{
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+section{
+    position: absolute;
+}
+
+/*Gift*/
+#gift{
+    background-color: #ff1259;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+.fitas{
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vertical{
+    width: 80px;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.vertical div{
+    background-color: #E74C4C;
+    width: 30px;
+    height: 100%;
+}
+.horizontal{
+    width: 100%;
+    height: 80px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.horizontal div{
+    background-color: #E74C4C;
+    width: 100%;
+    height:30px;
+}
+#laco{
+    position: absolute;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+/*OpenPage*/
+.openPage{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    z-index: 3;
+}
+.openPage .heart{
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.openPage button{
+    background-color: transparent;
+    color: #AB0000;
+    width: 200px;
+    height: 40px;
+    border: 3px solid #AB0000;
+    border-radius: 100px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.openPage .recado{
+    background-color: #E74C4C;
+    color: #E2B5B5;
+    padding: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.openPage h1{
+    position: absolute;
+    color: #ffffff;
+    font-size: 40px;
+}
+/*MainPage*/
+.mainPage{
+    background-color: #AB0000;
+    width: 100%;
+    height: auto;
+    border:10px solid #FF8383;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+.mainPage .polaroid{
+    background-color: #ffffff;
+    width: 230px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 6px 6px 0px #0202027a;
+    font-size: 12px;
+    text-align: center;
+    gap: 15px;
+    position: relative;
+}
+.mainPage .foto{
+    background-color: #c5c5c5;
+    width: 200px;
+    height: 220px;
+    z-index: 1;
+}
+.mainPage .right{
+    rotate: 20deg;
+    color: #E74C4C;
+}
+.mainPage .left{
+    rotate: -20deg;
+    color: steelblue;
+}
+.mainPage .recado{
+    background-color: #560000;
+    color: #FFA6A6;
+    padding: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mainPage .tach{
+    position: absolute;
+}
+#ta1{
+    top: 140px;
+    left: 90px;
+    rotate: -20deg;
+}
+#ta2{
+    top: 550px;
+    right: 90px;
+    rotate: 20deg;
+}
+#ta3{
+    top: 940px;
+    left: 90px;
+    rotate: -20deg;
+}
+#ta4{
+    top: 1340px;
+    right: 90px;
+    rotate: 20deg;
+}
+#ta5{
+    top: 1750px;
+    left: 90px;
+    rotate: -20deg;
+}
+
+
+#cat{
+    position: absolute;
+    z-index: 0;
+    transition: 1s;
+    top: 10px;
+}
+#heartmini{
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    transition: 1s;
+    animation: pulsar 0.5s infinite;
+    rotate: 20deg;
+}
+@keyframes pulsar {
+    0%{transform: scale(1);}
+    0%{transform: scale(1.1);}
+}
+
+#rosa1,#rosa2,#rosa3,#rosa4{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 0;
+    transition: 0.5s;
+}
+#rosa2,#rosa4{
+    transform: scaleX(-1);
+}
+
+.mainPage button{
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: 3px solid #FF8383;
+    border-radius: 100px;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*lovePage*/
+.lovePage{
+    background-color: #AB0000;
+    width: 100%;
+    height: auto;
+    border:10px solid #FF8383;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0px 50px 0px;
+    color: #ffffff;
+    font-size: 28px;
+    z-index: 1;
+    display: none;
+}
+.lovePage .polaroid{
+    background-color: #ffffff;
+    width: 190px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    box-shadow: 6px 6px 0px #0202027a;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+.lovePage #box{
+    width: 360px;
+    height: 380px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.lovePage .foto{
+    background-color: #c5c5c5;
+    width: 170px;
+    height: 190px;
+}
+#lana{
+    rotate: 15deg;
+    right: 30px;
+    top: 150px;
+}
+#lana p,#datalana {
+    align-self: flex-end;
+    color: #E74C4C;
+}
+#thaua{
+    rotate: -15deg;
+    left: 30px;
+    top: 50px;
+}
+#thaua p,#datathaua {
+    align-self: flex-start;
+    color: steelblue;
+}
+.polaroid span{
+    font-size: 10px;
+}
+
+
+.papper{
+    background-color: palegoldenrod;
+    color: #72725c;
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 16px;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 6px 6px 0px #0202027a;
+}
+.lovePage .recado{
+    background-color: #560000;
+    color: #FFA6A6;
+    padding: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*Fotos geral*/
+
+.foto{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#foto1{background-image: url('fotos/img1.jpg');}
+#foto2{background-image: url('fotos/img2.jpg');}
+#foto3{background-image: url('fotos/img3.jpg');}
+#foto4{background-image: url('fotos/img4.jpg');}
+#foto5{background-image: url('fotos/img5.jpg');}
+
+#fotothaua{background-image: url('fotos/thaua.jpg');}
+#fotolana{background-image: url('fotos/lana.jpg');}
+
+.return{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
